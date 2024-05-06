@@ -5,54 +5,48 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="css/stylesheet.css" rel="stylesheet" type="text/css"/>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Sedan&display=swap" rel="stylesheet">
 	<title>Eco-Garden - Afiliación</title>
 </head>
 <body>
 	<main>
 		<header>
-			<h1>Eco-Garden</h1>
-			<h2>La mejor tienda de plantas del Ecuador</h2>
+			<h1>Eco-Garden <span>La mejor tienda de plantas del Ecuador</span></h1>
 		</header>
 		<nav>
 			<a href="index.jsp">Home</a>
 			<a href="productos.jsp">Listado de Productos</a>
 			<a href="categorias.jsp">Categorías</a>
-			<a href="afiliacion.jsp">Afiliación</a>
 			<a href="login.jsp">Log-In</a>
 		</nav>
 		<form class='center' id="registro" action="respuesta.jsp" method="post">
 	        <fieldset>
-	            <h1>Formulario de Registro</h1>
-	            <div class="campo">
-	                <label class="label">Nombre: </label>
-	                <input type="text" placeholder="Ingresa tu Nombre" class="input_round" name="txt_nombre" required>
-	            </div>
-	            <div class="campo">
+	            <h1>Registro de Cliente</h1>
+	            	<label class="label">Cédula: : </label>
+	                <input type="text" name="txt_cedula" class="input_izq" placeholder="Ingrese su Número de Cédula: " required oninvalid="this.setCustomValidity('Ingrese su número de cédula')" maxlength="10">
+	            
+	                <label class="label">Nombre:  </label>
+	                <input type="text" placeholder="Ingrese su Nombre" class="input_izq" name="txt_nombre" required oninvalid="this.setCustomValidity('Ingrese sus nombres completos')">
+
 	                <label class="label">Teléfono: </label>
-	                <input type="text" placeholder="Ingresa tu Teléfono" class="input_round" name="txt_telefono"required maxlength="10">
-	            </div>
-	            <div class="campo">
+	                <input type="text" placeholder="Ingrese su Teléfono" class="input_izq" name="txt_telefono" required oninvalid="this.setCustomValidity('Ingrese su número telefónico')" maxlength="10">
+
 	                <label class="label">Correo: </label>
-	                <input type="email" placeholder="Ingresa tu Email" class="input_round" name="txt_correo" required>
-	            </div>
-	            <div class="campo">
-	                <label class="label">Copia de Cédula: </label>
-	                <input type="file" name="img_file" accept=".jpg, .png, .jpeg">
-	            </div>
-	            <div class="campo">
-	                <label class="label">Género: </label>
-	                <input type="radio" value="Masculino" name="genero">
-	                <label>Masculino</label>
-	                <input type="radio" value="Femenino" name="genero">
-	                <label>Femenino</label>
-	            </div>
-	            <div class="campo">
-	                <label class="label">Color de Membresía: </label>
-	                <input type="color" name="txt_color">
-	            </div>
+	                <input type="email" placeholder="Ingrese su Email" class="input_izq" name="txt_correo" required oninvalid="this.setCustomValidity('Ingrese un correo electrónico válido')">
+
+	               <label class="label">Estado Civil: </label>
+	               <select name="cmbEstadoCivil" required oninvalid="this.setCustomValidity('Seleccione una opción')" class='input_izq'>
+	               		<option value="1">Soltero</option>
+               			<option value="2">Casado</option>	
+						<option value="3">Divorciado</option>
+						<option value="4">Viudo</option>		
+	               </select>
+
+	                <label class="label">Contraseña: </label>
+	                <input type="password" class="input_izq" name="txt_pass1" required oninvalid="this.setCustomValidity('Ingrese una contraseña válida')">
+                	
+                	<label class="label">Repetir Contraseña: </label>
+	                <input type="password" class="input_izq" name="txt_pass2" required oninvalid="this.setCustomValidity('Ingrese una contraseña válida')">
+                	
 	            <div class="envio">
 	                <input type="submit" class="boton">
 	                <input type="reset" class="boton">

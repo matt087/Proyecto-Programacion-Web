@@ -7,9 +7,29 @@
 	--amarillo2: #d67302;
 }
 
-body{
+@font-face {
+  font-family: 'Oswald';
+  src: url('fonts/Oswald.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+	font-family:"Gluten";	
+	src: url('fonts/Gluten.woff2') format('woff2');
+	font-weight: 400;
+  	font-style: normal;
+}
+
+html, body{
+  	margin: 0;	
+  	padding: 0;
 	background-color: var(--fondo);
-	font-family: "Sedan", serif;
+	font-family: 'Oswald', sans-serif;
+}
+
+body{
+	overflow-x: hidden;
 }
 
 header{
@@ -37,11 +57,19 @@ h1{
 	text-align: center;
 }
 
+h1 span{
+	color: var(--celeste);
+ 	text-align: center;	
+ 	font-size: 20px;
+ 	font-style: italic;
+}
+
 h2{
 	color: var(--celeste);
 	font-weight: bold;
  	text-align: center;	
 }
+
 
 h3{
 	color: var(--azul);
@@ -63,12 +91,18 @@ nav a {
 	padding-right: 20px;
 }
 
-
+.table{
+	background-color: white;
+	border-radius: 10px;	
+	margin: 10px;
+	border-spacing: 20px;
+}
 
 .center{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 }
 
  .agrupacion{
@@ -113,10 +147,10 @@ nav a {
 .input-box i{
 	position: absolute;
 	right: 15px;
-	top: 50%;
+	top: 60%;
 	color: var(--azul);
 	transform: translateY(-40%);
-	font-size: 25px;
+	font-size: 35px;
 }
 
 .agrupacion .recordar{
@@ -215,40 +249,80 @@ fieldset{
 	background-color: var(--amarillo1);
 	border-radius: 40px;
 	border: none;
-	
+	display: flex;
+  	flex-direction: column;
+  	width: 400px;
 }
 
 fieldset h1{
 	font-weight: bold;
 	font-size: 25px;
 	color: var(--amarillo2);
-}
-
+	padding-top: 10px; 
+	}
+	
 form{
 	margin-top: 25px;
 }
 
+.rdbtn_izq{
+	margin-right: 265px;
+}
+
+.input_izq {
+  width: 350px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.input_izq_c {
+  padding-bottom: 10px;
+  display: flex;
+  margin-right: 20px;
+}
+
+.input_izq_c input{
+  margin-top: 5px;
+  width: 150px;
+}
+
+
 .label{
     font-weight: bold;
     font-size: 15px;
-        color: var(--amarillo2);
-}
-
-.campo{
-	margin-top: 10px;
+    color: var(--amarillo2);
+    display: inline-block;
+  	width: 200px;
+  	text-align: left;
+  	margin-left: 20px;
+  	padding-top: 5px;
 }
 
 .boton{
 	margin-left: 10px;
 	margin-right: 20px;
 	width: 85px;
+	border-radius: 10px;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 13px;
 }
+
 
 .envio{
 	margin-top: 10px;
 	display: flex;
 	align-items: right;
 	justify-content: right;
+	padding-bottom: 10px;
+	padding-right: 10px; 
+}
+
+.horizontal{
+	display: flex;
 }
 
 .container_cat{
@@ -298,6 +372,21 @@ form{
 	margin-left: 70%;
 	padding: 10px 20px 10px 20px;
 	cursor: pointer;
+}
+
+.derecha{
+	text-align: center;
+	margin-left: 75%;
+	margin-right: 10%;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: var(--amarillo1);
+	cursor: pointer;
+}
+
+.derecha a{
+	text-decoration: none;
+	color: var(--azul);
 }
 
 .down{

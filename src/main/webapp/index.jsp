@@ -4,23 +4,19 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Sedan&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/stylesheet.css" rel="stylesheet" type="text/css"/>
 	<title>Eco-Garden - Home</title>
 </head>
 <body>
 	<main>
 		<header>
-			<h1>Eco-Garden</h1>
-			<h2>La mejor tienda de plantas del Ecuador</h2>
+			<h1>Eco-Garden <span>La mejor tienda de plantas del Ecuador</span></h1>
 		</header>
 		<nav>
 			<a href="index.jsp">Home</a>
 			<a href="productos.jsp">Listado de Productos</a>
 			<a href="categorias.jsp">Categorías</a>
-			<a href="afiliacion.jsp">Afiliación</a>
 			<a href="login.jsp">Log-In</a>
 		</nav>
 		<div class="center">
@@ -28,7 +24,7 @@
 				<h3>Misión</h3>
                 <p>Nuestro compromiso es acercarte a esa experiencia única y renovadora al ofrecerte una amplia selección de plantas cuidadosamente seleccionadas y cultivadas con amor.</p>
 				<img src="resources/planta.jpg" width="250" height="300">
-			</section>
+			</section>|
 			<section>
 				<h3>Visión</h3>
 				<p>En Eco-Garden, creemos que la naturaleza nos brinda una fuente inagotable de belleza, calma y bienestar, así como paz, tranquilidad y buenas vibras a cada uno de nosotros.</p> 
